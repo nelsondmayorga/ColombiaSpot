@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "627274152938",
+    "firebase_url": "https://colombiaspot2-alt.firebaseio.com",
+    "project_id": "colombiaspot2-alt",
+    "storage_bucket": "colombiaspot2-alt.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:627274152938:android:9564752717073603",
+        "android_client_info": {
+          "package_name": "com.colombiaspot.colombiaspot"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "627274152938-m78kfikq75ro3f5o2bad2v3fl1va16ss.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.colombiaspot.colombiaspot",
+            "certificate_hash": "255b6bd3ec0f4ebe6530346fa249d7e3a4c8f491"
+          }
+        },
+        {
+          "client_id": "627274152938-0iqgbnedvda6d9smf16u5usgchlt7f3k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDvSACuziUN-TpleaPqh8OJ89dOjnOa8fU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "627274152938-0iqgbnedvda6d9smf16u5usgchlt7f3k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

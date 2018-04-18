@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.colombiaspot.colombiaspot.MainActivity">
+
+    <item
+        android:id="@+id/anadirPunto"
+        android:title="Añadir punto" />
+    <item
+        android:id="@+id/ayuda"
+        android:title="Acerca de" />
+
+    <item
+        android:id="@+id/cerrarSesion"
+        android:title="Cerrar Sesión" />
+
+</menu>
