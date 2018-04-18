@@ -11,6 +11,8 @@ import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
@@ -108,11 +110,31 @@ public class AnadirPunto extends AppCompatActivity implements AdapterView.OnItem
             public void onClick(View v) {
 
                 String id = myRef.push().getKey();
-                String nombre = etNombre.getText().toString();
-                String descripcion = etDescripcion.getText().toString();
+                String nombre = etNombre.getText().toString().trim();
+                String descripcion = etDescripcion.getText().toString().trim();
                 String tipo = rSpinner;
                 String imagen = urlImagen;
                 String coordenadas = coordenadasLatLang;
+
+                if (nombre.isEmpty()) {
+                    Toast toast1 = Toast.makeText(getApplicationContext(), "Debe completar Nombre", Toast.LENGTH_LONG);
+                    toast1.show();
+                    return;
+                }
+
+                if (descripcion.isEmpty()) {
+                    Toast toast2 = Toast.makeText(getApplicationContext(), "Debe completar Descripción", Toast.LENGTH_LONG);
+                    toast2.show();
+                    return;
+                }
+
+                if (coordenadas.isEmpty()) {
+                    Toast toast3 = Toast.makeText(getApplicationContext(), "Debe añadir Coordenadas", Toast.LENGTH_LONG);
+                    toast3.show();
+                    return;
+                }
+
+
 
                 Puntos spot = new Puntos(id, nombre, descripcion, tipo, imagen, coordenadas);
 
@@ -256,6 +278,17 @@ public class AnadirPunto extends AppCompatActivity implements AdapterView.OnItem
     @Override
     public void onNothingSelected(AdapterView<?> parent) {
 
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                onBackPressed();
+                return true;
+        }
+
+        return(super.onOptionsItemSelected(item));
     }
 
 
