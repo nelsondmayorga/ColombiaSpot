@@ -137,7 +137,7 @@ public class DetallePunto extends AppCompatActivity {
 
                 adaptador.notifyDataSetChanged();
                 checkComentarios();
-                Toast.makeText(DetallePunto.this, "onCHildAdded", Toast.LENGTH_SHORT).show();
+
 
             }
 
@@ -152,8 +152,10 @@ public class DetallePunto extends AppCompatActivity {
                     comentarios.add(comment);
                 }
 
+
                 adaptador.notifyDataSetChanged();
-                Toast.makeText(DetallePunto.this, "onChildChanged", Toast.LENGTH_SHORT).show();
+                checkComentarios();
+
             }
 
             @Override

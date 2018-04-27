@@ -73,7 +73,7 @@ public class AnadirPunto extends AppCompatActivity implements AdapterView.OnItem
     Button btnImagen;
 
     String rSpinner = "";
-    String urlImagen = "https://firebasestorage.googleapis.com/v0/b/colombiaspot2-alt.appspot.com/o/Images%2F16633?alt=media&token=6297e380-de1d-466e-a643-5ba0b6dd64ec";
+    String urlImagen = "https://firebasestorage.googleapis.com/v0/b/colombiaspot2-alt.appspot.com/o/Images%2Fno-imagen.png?alt=media&token=16a448bc-3728-4c5f-a591-3ab448a47a39";
     ProgressDialog mProgressDialog;
 
 

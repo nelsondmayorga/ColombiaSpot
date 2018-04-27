@@ -15,6 +15,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
+
+
         <TextView
             android:id="@+id/primary_text"
             android:text="Colombia Spot"
@@ -109,7 +111,22 @@
             app:layout_constraintTop_toBottomOf="@+id/supporting_text3"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintBottom_toTopOf="@+id/action_button_1" />
+            app:layout_constraintBottom_toTopOf="@+id/logo-unisangil" />
+
+        <ImageView
+            android:id="@+id/logo-unisangil"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:lineSpacingExtra="8dp"
+            android:layout_gravity="center"
+            app:layout_constraintTop_toBottomOf="@+id/supporting_text4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@+id/action_button_1"
+            android:src="@drawable/logo_unisangil" />
 
         <Button
             style="@style/Widget.AppCompat.Button.Borderless"
