@@ -52,9 +52,6 @@
         <activity android:name=".DetallePunto"
             android:label="@string/title_activity_detalle_punto"
             android:parentActivityName=".MapsActivity"/>
-        <activity
-            android:name=".MapCoordenadas"
-            android:label="@string/title_activity_map_coordenadas" />
     </application>
 
 </manifest>
